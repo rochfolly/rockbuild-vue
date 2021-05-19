@@ -1,21 +1,20 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <router-link to="/">Home</router-link>
-    <router-link :to="{ name: 'settings'}">Settings</router-link>
-    <router-link :to="{ name: 'event', params: { id: 5 }}">Event</router-link>
-    <Home msg="Welcome to Your Vue.js App"/>
+    <router-link to="/" class="vue-link">Home</router-link>
+    <router-link :to="{ name: 'settings'}" class="vue-link">Settings</router-link>
+    <router-link :to="{ name: 'event', params: { id: 5 }}" class="vue-link">Event</router-link>
     <router-view/>
   </div>
 </template>
 
 <script>
-import Home from './views/Home.vue'
+// import Home from './views/Home.vue'
 
 export default {
   name: 'App',
   components: {
-    Home
+    // Home
   }
 }
 </script>
